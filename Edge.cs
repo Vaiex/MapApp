@@ -47,7 +47,5 @@ namespace FinalProject1
             }
         }
 
-        // var edge = new Edge(room1, room2, 5.0);
-
     }
 

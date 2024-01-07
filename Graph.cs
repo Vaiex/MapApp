@@ -50,9 +50,7 @@ namespace FinalProject1
         {
             if (!Rooms.ContainsKey(fromRoomId) || !Rooms.ContainsKey(toRoomId))
             {
-                return false;
-            }
-
+                return false;}
             return adjacencies[fromRoomId].Any(edge => edge.To.Id == toRoomId);
         }
         public override string ToString()

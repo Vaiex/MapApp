@@ -32,7 +32,18 @@ namespace FinalProject1
             {
                 RequiresSpecialAccess = requiresAccess;
             }
-            public override string ToString()
+
+        public override bool Equals(object obj)
+        {
+            return obj is Room room &&
+                   Id == room.Id;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id);
+        }
+        public override string ToString()
             {
                 return $" (ID: {Id}, Floor: {Floor}) at Coordinates ({XCoordinate}, {YCoordinate})";
             }

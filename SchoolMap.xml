@@ -1,0 +1,41 @@
+﻿<Map>
+	<Rooms>
+		<Room id="101" floor="1" x="0.0" y="0.0" />
+		<Room id="102" floor="1" x="10.0" y="0.0" />
+		<Room id="103" floor="1" x="20.0" y="0.0" />
+		<Room id="104" floor="1" x="30.0" y="0.0" />
+		<Room id="105" floor="1" x="40.0" y="0.0" />
+		<Room id="106" floor="1" x="50.0" y="0.0" />
+		<Room id="107" floor="1" x="60.0" y="0.0" />
+		<Room id="108" floor="1" x="70.0" y="0.0" />
+		<Room id="109" floor="1" x="80.0" y="0.0" />
+		<Room id="110" floor="1" x="90.0" y="0.0" />
+		<Room id="201" floor="2" x="0.0" y="20.0" />
+		<Room id="202" floor="2" x="10.0" y="20.0" />
+		<Room id="209" floor="2" x="80.0" y="20.0" />
+		<Room id="210" floor="2" x="90.0" y="20.0" />
+		<Room id="StairsNear101" floor="1" x="0.5" y="0.0" />
+		<Room id="StairsNear110" floor="1" x="90.5" y="0.0" />
+	</Rooms>
+	<Edges>
+		<Edge from="101" to="102" weight="5.0" />
+		<Edge from="102" to="103" weight="5.0" />
+		<Edge from="103" to="104" weight="5.0" />
+		<Edge from="104" to="105" weight="5.0" />
+		<Edge from="105" to="106" weight="5.0" />
+		<Edge from="106" to="107" weight="5.0" />
+		<Edge from="107" to="108" weight="5.0" />
+		<Edge from="108" to="109" weight="5.0" />
+		<Edge from="109" to="110" weight="5.0" />
+		<Edge from="101" to="104" weight="10.0" />
+		<Edge from="102" to="105" weight="8.0" />
+		<Edge from="105" to="107" weight="7.0" />
+		<Edge from="103" to="108" weight="15.0" />
+		<Edge from="201" to="202" weight="5.0" />
+		<Edge from="209" to="210" weight="5.0" />
+		<Edge from="StairsNear101" to="201" weight="2.0" />
+		<Edge from="StairsNear110" to="210" weight="2.0" />
+		<Edge from="StairsNear101" to="101" weight="2.0" />
+		<Edge from="StairsNear110" to="110" weight="2.0" />
+	</Edges>
+	</Map>

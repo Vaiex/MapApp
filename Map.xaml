@@ -6,13 +6,10 @@
 
     <VerticalStackLayout Spacing="15" Padding="10">
 
-        <!-- A section for the user to select start and end rooms for navigation -->
         <Label Text="Select rooms to find a path:"/>
         <Picker x:Name="StartRoomPicker" Title="Start Room" ItemsSource="{Binding Rooms}" ItemDisplayBinding="{Binding Id}" />
         <Picker x:Name="EndRoomPicker" Title="End Room" ItemsSource="{Binding Rooms}" ItemDisplayBinding="{Binding Id}" />
         <Button Text="Find Path" Clicked="OnFindPathClicked" />
-
-        <!-- ListView to display the path found -->
         <ListView x:Name="PathListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
